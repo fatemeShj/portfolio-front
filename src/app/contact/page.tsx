@@ -3,6 +3,7 @@ import Image from "next/image";
 import footer from "@/public/footer.svg";
 import { useState } from "react";
 import { createContact } from "@/api/contact";
+import Button from "@/components/Button";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -64,12 +65,7 @@ export default function Contact() {
                 className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
               />
             </div>
-            <button
-              type="submit"
-              className="bg-primary text-white px-6 py-2 rounded-md shadow-md hover:bg-yellow-600 transition w-24"
-            >
-              Send
-            </button>
+            <Button isPrimary>Send</Button>
           </form>
         </div>
       </div>
