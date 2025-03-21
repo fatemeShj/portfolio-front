@@ -1,5 +1,6 @@
 import Image from "next/image";
 import mainImage from "@/public/main.svg";
+import Button from "@/components/Button";
 
 export default function Home() {
   return (
@@ -12,16 +13,15 @@ export default function Home() {
           Hello, my name is <br /> Fatemeh Shojaei
         </h2>
         <p className="text-gray-600 mt-4 max-w-lg">
-          Short text with details about you, what you do or your professional
-          career. You can add more information on the about page.
+          Welcome to my portfolio! I'm a creative and detail-oriented Front-End
+          Developer who thrives on crafting seamless user experiences. Always
+          eager to learn and take on new challenges, I turn ideas into
+          interactive, responsive, and visually appealing web applications.
+          Let’s build something amazing together!
         </p>
         <div className="mt-6 flex space-x-4">
-          <button className="bg-primary text-white px-5 py-2 rounded shadow hover:bg-primary">
-            Projects
-          </button>
-          <button className="border border-gray-800 text-gray-800 px-5 py-2 rounded shadow hover:bg-gray-200">
-            LinkedIn
-          </button>
+          <Button isPrimary>Experiences</Button>
+          <Button isSecondary>LinkedIn</Button>
         </div>
       </div>
 
