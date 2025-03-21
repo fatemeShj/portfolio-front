@@ -13,11 +13,11 @@ export default function Home() {
           Hello, my name is <br /> Fatemeh Shojaei
         </h2>
         <p className="text-gray-600 mt-4 max-w-lg">
-          Welcome to my portfolio! I'm a creative and detail-oriented Front-End
+          {`Welcome to my portfolio! I'm a creative and detail-oriented Front-End
           Developer who thrives on crafting seamless user experiences. Always
           eager to learn and take on new challenges, I turn ideas into
           interactive, responsive, and visually appealing web applications.
-          Let’s build something amazing together!
+          Let’s build something amazing together!`}
         </p>
         <div className="mt-6 flex space-x-4">
           <Button isPrimary>Experiences</Button>
