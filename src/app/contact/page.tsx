@@ -2,7 +2,7 @@
 import Image from "next/image";
 import footer from "@/public/footer.svg";
 import { useState } from "react";
-import { createContact } from "@/api/contact";
+import { createContact } from "@/api/createContact";
 import Button from "@/components/Button";
 
 export default function Contact() {
