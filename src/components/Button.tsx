@@ -6,6 +6,7 @@ interface ButtonProps {
   children: ReactNode;
   isPrimary?: boolean;
   isSecondary?: boolean;
+  fullRounded?: boolean;
   className?: string;
 }
 
@@ -14,6 +15,7 @@ const Button = ({
   children,
   isPrimary = false,
   isSecondary = false,
+  fullRounded = false,
   className = "",
   ...props
 }: ButtonProps) => {
@@ -21,8 +23,9 @@ const Button = ({
     "px-10 py-3 shrinking-0",
     {
       "bg-primary text-secondary px-12 py-4 rounded-xl font-bold": isPrimary,
-      "border-2 border-secondary bg-white text-secondary rounded-xl font-bold":
+      "border-2 border-secondary text-secondary rounded-xl font-bold":
         isSecondary,
+      "rounded-full": fullRounded,
     },
     className
   );

@@ -4,6 +4,7 @@ import Image from "next/image";
 import menuIcon from "@/public/menu.svg";
 import xmarkIcon from "@/public/xmark.svg";
 import Link from "next/link";
+import Button from "@/components/Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,18 +18,22 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-xl font-bold">Fatemeh</div>
+        <div className="text-xl font-bold text-primary">Fatemeh</div>
 
-        <ul className="hidden lg:flex space-x-10">
-          {menuItems.map((item) => (
-            <Link href={item.link} key={item.id}>
-              <li key={item.id} className="cursor-pointer">
-                {item.name}
-              </li>
-            </Link>
-          ))}
-        </ul>
-
+        <div className="hidden lg:flex justify-between items-center gap-10">
+          <ul className="hidden lg:flex space-x-10">
+            {menuItems.map((item) => (
+              <Link href={item.link} key={item.id}>
+                <li key={item.id} className="cursor-pointer">
+                  {item.name}
+                </li>
+              </Link>
+            ))}
+          </ul>
+          <Button isSecondary fullRounded>
+            Download Resume
+          </Button>
+        </div>
         <button className="lg:hidden" onClick={() => setIsOpen(true)}>
           <Image src={menuIcon} alt="menu" width={20} height={20} />
         </button>
