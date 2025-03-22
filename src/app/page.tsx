@@ -1,12 +1,13 @@
 import Image from "next/image";
 import mainImage from "@/public/main.svg";
 import Button from "@/components/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="max-w-4xl w-full px-6 md:px-12">
-      <div className="relative z-10 text-gray-900 mt-28">
-        <p className="text-primary uppercase font-semibold">
+    <div className="mx-6 md:mx-52">
+      <div className="relative z-10 text-gray-900 mt-10 md:mt-40">
+        <p className="text-primary uppercase font-semibold text-2xl">
           FRONT-END DEVELOPER
         </p>
         <h2 className="text-5xl font-bold mt-2">
@@ -20,13 +21,15 @@ export default function Home() {
           Let’s build something amazing together!`}
         </p>
         <div className="mt-6 flex space-x-4">
-          <Button isPrimary>Experiences</Button>
+          <Link href="/experience">
+            <Button isPrimary>Experiences</Button>
+          </Link>
           <Button isSecondary>LinkedIn</Button>
         </div>
       </div>
 
-      <div className="absolute top-0 right-0 w-1/2 z-0">
-        <Image src={mainImage} alt="main" />
+      <div className="absolute top-0 right-0 z-0">
+        <Image src={mainImage} alt="main" className="w-auto h-auto" />
       </div>
     </div>
   );

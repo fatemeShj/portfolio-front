@@ -3,8 +3,8 @@ import Button from "@/components/Button";
 import about from "@/public/about.svg";
 export default function About() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center mx-4 md:mx-24">
-      <div className="mt-10 space-y-5">
+    <div className="flex flex-col md:flex-row justify-between items-center mx-6 md:mx-52">
+      <div className="mt-10 md:mt-40 space-y-5">
         <div className="text-secondary text-5xl font-bold">About me</div>
         <p className="text-gray-600 mt-4 max-w-lg">
           {`Front-End Developer with 7+ years of experience in building responsive, interactive, and high-performance web
@@ -15,7 +15,7 @@ experiences.`}
         </p>
         <Button isPrimary>Resume</Button>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 md:mt-40">
         <Image
           src={about}
           alt="main"
