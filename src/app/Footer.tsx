@@ -21,7 +21,7 @@ const Footer = () => {
     {
       id: 3,
       name: "linkedin",
-      link: "",
+      link: "https://www.linkedin.com/in/fatemeh-shojaei-3929aa18a/",
       icon: linkedin,
     },
   ];
