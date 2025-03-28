@@ -34,7 +34,7 @@ export default function ImageSlider({
 
   return (
     <div className="relative">
-      <div className="relative w-full h-[200px]">
+      <div className="relative w-full h-[300px]">
         <Image
           src={`${process.env.NEXT_PUBLIC_API_URL}${images[currentIndex]?.url}`}
           alt="Image"
@@ -45,13 +45,13 @@ export default function ImageSlider({
         />
       </div>
 
-      <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 flex space-x-3">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {images.map((_, index) => (
           <div
             key={index}
             onClick={() => goToSlide(index)}
             className={`h-4 w-4 cursor-pointer rounded-xl ${
-              index === currentIndex ? "bg-prima" : "bg-gray-300"
+              index === currentIndex ? "bg-primary" : "bg-gray-300"
             } transition-all duration-300 ease-in-out`}
           ></div>
         ))}

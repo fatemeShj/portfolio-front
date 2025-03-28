@@ -6,7 +6,7 @@ const Project = async () => {
   const projectData: ProjectType[] = await getProjects();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-6 p-4 mx-6 md:mx-52 pt-10 md:pt-40">
       {projectData.map((project) => (
         <ProjectCard
           key={project.id}
