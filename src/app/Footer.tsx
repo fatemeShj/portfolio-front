@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center p-8 border-t border-secondary mx-10 z-50">
+    <div className="flex justify-between items-center p-8 border-t border-tertiary mx-10 z-50">
       <div>Fatemeh Shojaei</div>
       <div className="flex space-x-4">
         {socials.map((social) => (

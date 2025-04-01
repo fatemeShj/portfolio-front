@@ -1,5 +1,5 @@
 import ImageSlider from "@/components/ImageSlider";
-import { Image as ImageType } from "@/types/Image";
+import { ImageType } from "@/types/Image";
 
 const ProjectCard = ({
   title,

@@ -1,6 +1,6 @@
 import { getProjects } from "@/api/getProjects";
 import ProjectCard from "./ProjectCard";
-import { Project as ProjectType } from "@/types/Project";
+import { ProjectType } from "@/types/Project";
 
 const Project = async () => {
   const projectData: ProjectType[] = await getProjects();

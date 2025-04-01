@@ -1,5 +1,5 @@
-import { Image } from "./Image";
-export type Project = {
+import { ImageType } from "./Image";
+export type ProjectType = {
   id: number;
   documentId: string;
   name: string;
@@ -8,5 +8,5 @@ export type Project = {
   publishedAt: string;
   locale: string;
   description: string;
-  image: Image[];
+  image: ImageType[];
 };

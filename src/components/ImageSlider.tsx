@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 import Image from "next/image";
-import { Image as ImageType } from "@/types/Image";
+import { ImageType } from "@/types/Image";
 
 export default function ImageSlider({
   images,

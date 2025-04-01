@@ -1,4 +1,4 @@
-export type Skill = {
+export type SkillType = {
   id: number;
   documentId: string;
   name: string;

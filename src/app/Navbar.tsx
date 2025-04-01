@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import menuIcon from "@/public/menu.svg";
+import darkMenuIcon from "@/public/dark-menu.svg";
 import xmarkIcon from "@/public/xmark.svg";
 import Link from "next/link";
-import Button from "@/components/Button";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +31,10 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-          <Button isSecondary fullRounded>
-            Download Resume
-          </Button>
+          <ThemeSwitcher />
         </div>
         <button className="lg:hidden" onClick={() => setIsOpen(true)}>
-          <Image src={menuIcon} alt="menu" width={20} height={20} />
+          <Image src={darkMenuIcon} alt="menu" width={20} height={20} />
         </button>
       </div>
 

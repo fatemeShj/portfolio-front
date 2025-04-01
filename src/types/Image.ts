@@ -1,4 +1,4 @@
-export type Image = {
+export type ImageType = {
   id: number;
   documentId: string;
   name: string;
@@ -7,10 +7,10 @@ export type Image = {
   width: number;
   height: number;
   formats: {
-    thumbnail: Format;
-    small: Format;
-    medium: Format;
-    large: Format;
+    thumbnail: FormatType;
+    small: FormatType;
+    medium: FormatType;
+    large: FormatType;
   };
   hash: string;
   ext: string;
@@ -27,7 +27,7 @@ export type Image = {
   locale: null;
 };
 
-type Format = {
+type FormatType = {
   name: string;
   hash: string;
   ext: string;

@@ -6,11 +6,14 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: "#6A9C89",
-        secondary: "#2E3238",
+        primary: "#222831",
+        secondary: "#00ADB5",
+        tertiary: "#EEEEEE",
+        customGray: "#393E46",
       },
     },
   },
