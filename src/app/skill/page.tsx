@@ -16,7 +16,7 @@ const Skill = async () => {
     >
       <div className="flex-1 max-w-lg space-y-4">
         {detailedSkills.map((skill) => (
-          <div key={skill.id} className="text-white text-lg font-semibold">
+          <div key={skill.id} className="text-lg font-semibold">
             {skill.name}
           </div>
         ))}
@@ -24,7 +24,7 @@ const Skill = async () => {
 
       <div className="flex-1 max-w-lg space-y-4">
         {shortSkills.map((skill) => (
-          <div key={skill.id} className="text-white text-lg font-semibold">
+          <div key={skill.id} className="text-lg font-semibold">
             {skill.name}
           </div>
         ))}

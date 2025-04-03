@@ -42,9 +42,7 @@ export default function Contact() {
       <div className="p-6 w-full max-w-md">
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="block text-tertiary font-bold mb-2">
-              Your Name
-            </label>
+            <label className="block font-bold mb-2">Your Name</label>
             <input
               type="text"
               name="name"
@@ -55,9 +53,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-tertiary font-bold mb-2">
-              Your Email
-            </label>
+            <label className="block font-bold mb-2">Your Email</label>
             <input
               type="email"
               name="email"
@@ -68,9 +64,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label className="block text-tertiary font-bold mb-2">
-              Your Message
-            </label>
+            <label className="block font-bold mb-2">Your Message</label>
             <textarea
               name="message"
               placeholder="Message"
