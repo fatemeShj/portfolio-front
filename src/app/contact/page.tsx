@@ -58,7 +58,7 @@ export default function Contact() {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
       <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="order-2 lg:order-1">
+        <div className="order-1 lg:order-1">
           <div className="justify-center items-center text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Got a project in <span className="text-secondary">mind?</span>
@@ -82,7 +82,8 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="order-1 lg:order-2">
+        {/* Form section - will appear second on mobile, first on desktop */}
+        <div className="order-2 lg:order-2">
           <div className="p-6 sm:p-8 rounded-2xl shadow-lg w-full max-w-md mx-auto">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
