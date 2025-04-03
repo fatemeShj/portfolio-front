@@ -23,6 +23,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
 
   useEffect(() => {
     saveThemeToStorage(theme);
+    document.documentElement.className = theme;
   }, [theme]);
 
   return (

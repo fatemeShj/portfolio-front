@@ -2,7 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    @apply bg-white text-black dark:bg-gray-900 dark:text-white;
-  }
-  
+:root, .light-theme {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --primary: #222831;
+  --secondary: #00ADB5;
+  --tertiary: #EEEEEE;
+  --customGray: #393E46;
+}
+
+.dark-theme {
+  --bg-color: #1a202c;
+  --text-color: #f7fafc;
+  --primary: #f7fafc;
+  --secondary: #38B2AC;
+  --tertiary: #2D3748;
+  --customGray: #718096;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

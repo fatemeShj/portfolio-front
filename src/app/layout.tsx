@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col min-h-screen bg-primary text-tertiary">
+      <body className="flex flex-col min-h-screen bg-[var(--bg-color)] text-[var(--text-color)]">
         <ThemeProvider>
           <Navbar />
           <main className="flex-grow">{children}</main>
