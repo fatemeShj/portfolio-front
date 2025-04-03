@@ -1,6 +1,7 @@
 import { getSkills } from "@/api/getSkills";
 import { SkillType } from "@/types/Skill";
-import skillBackground from "@/public/skill-background.png";
+// import skillBackground from "@/public/skill-background.png";
+import doodle from "@/public/doodle.svg";
 
 const Skill = async () => {
   const skills: SkillType[] = await getSkills();
@@ -11,7 +12,7 @@ const Skill = async () => {
   return (
     <div
       className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-cover bg-center px-6 py-12"
-      style={{ backgroundImage: `url(${skillBackground.src})` }}
+      style={{ backgroundImage: `url(${doodle.src})` }}
     >
       <div className="flex-1 max-w-lg space-y-4">
         {detailedSkills.map((skill) => (
