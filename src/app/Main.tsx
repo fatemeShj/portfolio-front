@@ -14,7 +14,7 @@ const Main = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-2 leading-tight">
             Hello, my name is <br className="hidden sm:block" /> Fatemeh Shojaei
           </h1>
-          <p className="mt-4 md:mt-6 text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-lg">
+          <p className="mt-4 md:mt-6 text-base md:text-lg max-w-lg">
             {`Welcome to my portfolio! I'm a creative and detail-oriented
             Front-End Developer who thrives on crafting seamless user
             experiences. Always eager to learn and take on new challenges, I
