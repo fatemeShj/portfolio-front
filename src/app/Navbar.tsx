@@ -18,9 +18,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="fixed w-full z-50">
-      <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-xl font-bold text-primary">Fatemeh</div>
-
+      <div className="container mx-auto flex justify-end items-center p-4">
         <div className="hidden lg:flex justify-between items-center gap-10">
           <ul className="hidden lg:flex space-x-10">
             {menuItems.map((item) => (
