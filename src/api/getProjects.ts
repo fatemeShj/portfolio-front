@@ -1,8 +1,20 @@
 export async function getProjects() {
-  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/projects`;
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  if (!baseUrl) {
+    console.error("NEXT_PUBLIC_API_URL is not defined");
+    return null;
+  }
+
+  let apiUrl;
+  try {
+    apiUrl = new URL("/api/projects", baseUrl).toString();
+  } catch (error) {
+    console.error("Invalid API base URL:", error);
+    return null;
+  }
 
   try {
-    const res = await fetch(url, {
+    const res = await fetch(apiUrl, {
       method: "GET",
       next: { revalidate: 60 },
     });
@@ -12,7 +24,6 @@ export async function getProjects() {
     }
 
     const data = await res.json();
-
     return data?.data || null;
   } catch (error) {
     console.error("Error fetching project data:", error);
