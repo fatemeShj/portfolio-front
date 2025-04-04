@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-end items-center p-4">
         <div className="hidden lg:flex justify-between items-center gap-10">
           <ul className="hidden lg:flex space-x-10">
-            {menuItems.map((item) => (
+            {menuItems?.map((item) => (
               <Link href={item.link} key={item.id}>
                 <li key={item.id} className="cursor-pointer">
                   {item.name}
@@ -45,7 +45,7 @@ const Navbar = () => {
           </button>
 
           <ul className="space-y-10">
-            {menuItems.map((item) => (
+            {menuItems?.map((item) => (
               <Link href={item.link} key={item.id}>
                 <li key={item.id} className="cursor-pointer">
                   {item.name}

@@ -46,7 +46,7 @@ export default function ImageSlider({
       </div>
 
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex space-x-3">
-        {images.map((_, index) => (
+        {images?.map((_, index) => (
           <div
             key={index}
             onClick={() => goToSlide(index)}

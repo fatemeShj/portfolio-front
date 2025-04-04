@@ -17,7 +17,7 @@ const Skill = async () => {
             My <span className="text-secondary">Expertise</span>
           </h2>
 
-          {detailedSkills.map((skill) => (
+          {detailedSkills?.map((skill) => (
             <div
               key={skill.id}
               className="flex gap-2 group relative p-3 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-primary hover:border-blue-200"
@@ -37,7 +37,7 @@ const Skill = async () => {
             Tech <span className="text-secondary">Toolbox</span>
           </h2>
           <div className="flex flex-wrap gap-3">
-            {shortSkills.map((skill) => (
+            {shortSkills?.map((skill) => (
               <span
                 key={skill.id}
                 className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-gray-800 shadow-xs hover:shadow-sm transition-all hover:scale-105 border border-primary hover:border-indigo-200"

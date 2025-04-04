@@ -7,7 +7,7 @@ const Project = async () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-6 p-4 mx-6 md:mx-52 pt-10 md:pt-40">
-      {projectData.map((project) => (
+      {projectData?.map((project) => (
         <ProjectCard
           key={project.id}
           title={project.name}

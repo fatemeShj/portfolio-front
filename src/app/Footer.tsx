@@ -43,7 +43,7 @@ const Footer = () => {
     >
       <div>Fatemeh Shojaei</div>
       <div className="flex space-x-4">
-        {socials.map((social) => (
+        {socials?.map((social) => (
           <Link
             key={social.id}
             href={social.link}
