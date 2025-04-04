@@ -1,10 +1,11 @@
 "use client";
 import React, { useEffect, createContext, useState, ReactNode } from "react";
-import { getThemeFromStorage, saveThemeToStorage } from "@/utils/theme";
+import { getInitialTheme, saveThemeToStorage } from "@/utils/theme";
 
 interface ThemeContextType {
   theme: string;
   toggleTheme: () => void;
+  isDark: boolean;
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>(
@@ -14,7 +15,13 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
 export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState(getThemeFromStorage);
+  const [theme, setTheme] = useState<string>("dark-theme");
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setTheme(getInitialTheme());
+    setMounted(true);
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === "dark-theme" ? "light-theme" : "dark-theme";
@@ -22,12 +29,28 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   useEffect(() => {
+    if (!mounted) return;
+
     saveThemeToStorage(theme);
     document.documentElement.className = theme;
-  }, [theme]);
+    document.documentElement.style.setProperty(
+      "color-scheme",
+      theme === "dark-theme" ? "dark" : "light"
+    );
+  }, [theme, mounted]);
+
+  if (!mounted) {
+    return <div style={{ visibility: "hidden" }}>{children}</div>;
+  }
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{
+        theme,
+        toggleTheme,
+        isDark: theme === "dark-theme",
+      }}
+    >
       {children}
     </ThemeContext.Provider>
   );
