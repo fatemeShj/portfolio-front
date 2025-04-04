@@ -1,8 +1,18 @@
 export async function getSkills() {
-  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/skills`;
-
+  const baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  if (!baseUrl) {
+    console.error("NEXT_PUBLIC_API_URL is not defined");
+    return null;
+  }
+  let apiUrl;
   try {
-    const res = await fetch(url, {
+    apiUrl = new URL("/api/skills", baseUrl).toString();
+  } catch (error) {
+    console.error("Invalid API base URL:", error);
+    return null;
+  }
+  try {
+    const res = await fetch(apiUrl, {
       method: "GET",
       next: { revalidate: 60 },
     });
