@@ -20,7 +20,7 @@ const Button = ({
   const buttonClass = clsx(
     "px-12 py-4 font-bold shrinking-0 rounded-full",
     {
-      "bg-secondary text-tertiary": isPrimary,
+      "bg-secondary text-customGray": isPrimary,
       "bg-customGray text-tertiary": isSecondary,
     },
     className
