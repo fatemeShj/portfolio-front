@@ -5,7 +5,7 @@ import doodleRound from "@/assets/images/doodle-round.svg";
 
 const Main = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-20 2xl:px-52 py-10 md:py-20">
+    <div className="container">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12 xl:gap-16">
         <div className="order-2 lg:order-1 mt-10 lg:mt-0 lg:w-1/2 flex flex-col">
           <p className="text-secondary uppercase font-semibold text-xl sm:text-2xl">

@@ -4,7 +4,7 @@ import about from "@/assets/images/about.svg";
 
 export default function About() {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-20">
+    <div className="container">
       <div className="flex flex-col lg:flex-row justify-between items-center gap-8 md:gap-12">
         <div className="order-2 lg:order-1 max-w-2xl">
           <h1 className="text-secondary text-4xl sm:text-5xl font-bold mb-6">

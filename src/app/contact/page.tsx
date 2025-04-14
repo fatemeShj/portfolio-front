@@ -56,8 +56,8 @@ export default function Contact() {
   };
 
   return (
-    <section className="flex items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
-      <div className="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="flex items-center justify-center">
+      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="order-1 lg:order-1">
           <div className="justify-center items-center text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">

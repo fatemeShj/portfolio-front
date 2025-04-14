@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen bg-[var(--bg-color)] text-[var(--text-color)]">
         <ThemeProvider>
           <Navbar />
-          <main className="flex-grow px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
+          <main className="flex-grow pmx-auto px-6 lg:px-8 xl:px-20 2xl:px-52 py-16 md:py-20">
             {children}
           </main>
           <Footer />
