@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/Button";
-import about from "@/public/about.svg";
+import about from "@/assets/images/about.svg";
 
 export default function About() {
   return (
@@ -19,9 +19,15 @@ export default function About() {
             delivering scalable and user-friendly solutions. Passionate about
             clean code, performance optimization, and seamless user experiences.
           </p>
-          <Button isPrimary className="w-full sm:w-auto">
-            Resume
-          </Button>
+          <a
+            href="/front-end-developer.pdf"
+            download
+            className="w-full sm:w-auto"
+          >
+            <Button isPrimary className="w-full sm:w-auto">
+              Download resume
+            </Button>
+          </a>
         </div>
 
         <div className="order-1 lg:order-2 w-full lg:w-auto flex justify-center">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/Button";
-import mainImage from "@/public/main.svg";
-import doodleRound from "@/public/doodle-round.svg";
+import mainImage from "@/assets/images/main.svg";
+import doodleRound from "@/assets/images/doodle-round.svg";
 
 const Main = () => {
   return (
@@ -30,9 +30,15 @@ const Main = () => {
                 Hire me
               </Button>
             </a>
-            <Button isSecondary className="w-full sm:w-auto">
-              Download resume
-            </Button>
+            <a
+              href="/front-end-developer.pdf"
+              download
+              className="w-full sm:w-auto"
+            >
+              <Button isSecondary className="w-full sm:w-auto">
+                Download resume
+              </Button>
+            </a>
           </div>
         </div>
 

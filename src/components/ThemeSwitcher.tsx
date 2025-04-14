@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import { ThemeContext } from "../context/ThemeContext";
-import moonIcon from "@/public/moon.svg";
-import sunIcon from "@/public/sun.svg";
+import moonIcon from "@/assets/images/moon.svg";
+import sunIcon from "@/assets/images/sun.svg";
 
 const ThemeSwitcher = () => {
   const themeContext = useContext(ThemeContext);

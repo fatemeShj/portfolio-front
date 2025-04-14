@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import darkMenuIcon from "@/public/dark-menu.svg";
-import xmarkIcon from "@/public/xmark.svg";
+import darkMenuIcon from "@/assets/images/dark-menu.svg";
+import xmarkIcon from "@/assets/images/xmark.svg";
 import Link from "next/link";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 

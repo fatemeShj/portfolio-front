@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { createContact } from "@/api/createContact";
 import Image from "next/image";
-import contactImage from "@/public/contact.svg";
+import contactImage from "@/assets/images/contact.svg";
 import Button from "@/components/Button";
 
 export default function Contact() {

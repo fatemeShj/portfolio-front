@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getSkills } from "@/api/getSkills";
 import { SkillType } from "@/types/Skill";
-import checkIcon from "@/public/circle-check.svg";
+import checkIcon from "@/assets/images/circle-check.svg";
 
 const Skill = async () => {
   const skills: SkillType[] = await getSkills();

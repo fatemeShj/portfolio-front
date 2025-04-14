@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { ThemeContext } from "@/context/ThemeContext";
-import linkedin from "@/public/linkedin.svg";
-import email from "@/public/email.svg";
-import github from "@/public/github.svg";
-import darkLinkedin from "@/public/dark-linkedin.svg";
-import darkEmail from "@/public/dark-email.svg";
-import darkGithub from "@/public/dark-github.svg";
+import linkedin from "@/assets/images/linkedin.svg";
+import email from "@/assets/images/email.svg";
+import github from "@/assets/images/github.svg";
+import darkLinkedin from "@/assets/images/dark-linkedin.svg";
+import darkEmail from "@/assets/images/dark-email.svg";
+import darkGithub from "@/assets/images/dark-github.svg";
 
 const Footer = () => {
   const themeContext = useContext(ThemeContext);
