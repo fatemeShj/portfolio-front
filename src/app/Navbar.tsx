@@ -50,7 +50,7 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-primary bg-opacity-90 flex flex-col items-center justify-center text-white text-2xl">
+        <div className="fixed inset-0 bg-primary bg-opacity-90 flex flex-col items-center justify-center text-white text-2xl gap-4">
           <button
             className="absolute top-6 right-6"
             onClick={() => setIsOpen(false)}
@@ -58,17 +58,13 @@ const Navbar = () => {
             <Image src={xmarkIcon} alt="xmark" width={20} height={20} />
           </button>
 
-          <ul className="space-y-10">
+          <ul className="space-y-5">
             {menuItems?.map((item) => (
-              <Link
-                href={item.link}
-                key={item.id}
-                onClick={() => setIsOpen(false)}
-              >
-                <li key={item.id} className="cursor-pointer">
+              <li key={item.id} className="cursor-pointer">
+                <Link href={item.link} onClick={() => setIsOpen(false)}>
                   {item.name}
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
