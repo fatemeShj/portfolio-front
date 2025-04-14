@@ -22,7 +22,7 @@ const Navbar = () => {
     { id: 6, name: "Contact", link: "/contact" },
   ];
   return (
-    <nav className="fixed w-full z-50">
+    <nav className="fixed w-full z-50 bg-[var(--bg-color)]">
       <div className="container mx-auto flex justify-end items-center p-4">
         <div className="hidden lg:flex justify-between items-center gap-10">
           <ul className="hidden lg:flex space-x-10">
