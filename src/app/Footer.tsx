@@ -12,7 +12,7 @@ import darkGithub from "@/assets/images/dark-github.svg";
 
 const Footer = () => {
   const themeContext = useContext(ThemeContext);
-  const currentTheme = themeContext?.theme; // "dark-theme" or "light-theme"
+  const currentTheme = themeContext?.theme;
 
   const socials = [
     {
