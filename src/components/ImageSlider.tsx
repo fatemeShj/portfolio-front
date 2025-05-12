@@ -40,7 +40,7 @@ export default function ImageSlider({
           alt="Image"
           className={`transition-all duration-[2000ms] ease-in-out cursor-pointer ${
             isFading ? "opacity-0" : "opacity-100"
-          }`}
+          } object-cover`}
           fill
         />
       </div>

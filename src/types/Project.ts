@@ -9,4 +9,5 @@ export type ProjectType = {
   locale: string;
   description: string;
   image: ImageType[];
+  link: string;
 };

@@ -13,6 +13,7 @@ const Project = async () => {
           title={project.name}
           description={project.description}
           images={project.image}
+          projectUrl={project.link}
         />
       ))}
     </div>

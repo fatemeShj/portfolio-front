@@ -16,9 +16,9 @@ const Navbar = () => {
   const currentTheme = themeContext?.theme;
   const menuItems = [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "My skills", link: "/skill" },
+    { id: 2, name: "Skills", link: "/skill" },
     { id: 3, name: "About", link: "/about" },
-    { id: 5, name: "Project", link: "/project" },
+    { id: 5, name: "Projects", link: "/project" },
     { id: 6, name: "Contact", link: "/contact" },
   ];
   return (
